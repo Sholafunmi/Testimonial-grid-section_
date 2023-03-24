@@ -1,0 +1,530 @@
+*{
+ margin: 0px;
+ padding: 0px;   
+ box-sizing: border-box;
+}
+body{
+    background-color: rgb(217, 217, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page{
+  /* color: black; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.card{
+    height: fit-content;
+    width: 70%;
+   display: flex;
+   gap: 1em;
+}
+.left{
+    height: 100%;
+    width: 75%; 
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.up{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 1em;
+}
+.upleft{
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 5em ;
+    /* background-size: ; */
+    color: hsl(0, 0%, 100%); 
+    height: 100%;
+    width: 70%;
+    border-radius: 5px;
+    padding: 20px;
+
+}
+ .upleftDiv1{
+display: flex;
+gap: 15px;
+font-size: 12px;
+ }
+ .upleftDiv1 p span{
+ opacity: 50%;
+}
+.upleftDiv2{
+padding: 10px 0;
+font-size: 18px;
+font-weight: bold;
+}
+.upleftDiv3{
+ font-size: 12px;
+ opacity: 70%;
+}
+
+.upright{
+    background-color: hsl(217, 19%, 35%);
+    color:  hsl(0, 0%, 100%); 
+    height: 100%;
+    width: 30%;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.uprightDiv1{
+
+display: flex;
+gap: 15px;
+font-size: 12px;
+}
+.uprightDiv1 p span{
+    opacity: 50%;
+}
+.uprightDiv2{
+    padding: 10px 0;
+    font-size: 18px;
+     font-weight: bold;
+}
+.uprightDiv3{
+     font-size: 12px;
+     opacity: 70%;
+}
+    
+.down{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 1em;
+
+   
+}
+.downleft{
+    background-color: #fff;
+    color: black;
+    height: 100%;
+    width: 30%;
+    border-radius: 5px;
+    padding: 20px;
+}
+.downleftDiv1{
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+}
+.downleftDiv2 p span{
+    opacity: 50%;
+       font-size: 18px;
+     
+}
+.downleftDiv2{
+    padding: 10px 0;
+    font-size: 18px;
+      font-weight: bold;
+}
+.downleftDiv3{
+     font-size: 12px;
+     opacity: 70%;
+}
+    
+.downright{
+    background-color: hsl(219, 29%, 14%);
+    color:  hsl(0, 0%, 100%); 
+    height: 100%;
+    width: 70%;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.downrightDiv1{
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+}
+.downrightDiv1 p span{
+    opacity: 50%;  
+}
+.downrightDiv2{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.downrightDiv3{
+     font-size: 12px;
+     opacity: 70%;
+}
+
+aside{
+    background-color:hsl(0, 0%, 100%) ;
+    color: black;
+    height:100% ;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 20px;
+}
+aside .Div1{
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+}
+aside .Div1 p span{
+    opacity: 50%;
+}
+aside .Div2{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+aside .Div3{
+     font-size: 12px;
+     opacity: 70%;
+}
+
+
+/* Media query for tabalets starts here */
+@media only screen and (max-width:930px){
+    .page{
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3em 0 5em 0;
+    }
+    .card{
+    
+        height: fit-content;
+        width: 90%;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: .5em;  
+    }
+    .left{
+        height: 100%;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        padding-right: 0%;
+        gap: .5em; 
+        /* border: 2px solid red; */
+    
+    }
+    .up{
+        height: 50%;
+        /* height: 230px; */
+        width: 100%;
+        display: flex;
+        gap: .5em;
+    }
+    .upleft{
+        background-color: hsl(263, 55%, 52%);
+        color: #fff; 
+        height: 100%;
+        width: 70%;
+        border-radius: 5px;
+        padding: 20px;
+    
+    }
+     .upleftDiv1{
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+     }
+     .upleftDiv1 p span{
+       color: #c2bbbb;
+    }
+    .upleftDiv2{
+    padding: 10px 0;
+    font-size: 18px;
+    }
+    .upleftDiv3{
+     font-size: 11px;
+    }
+    
+    
+    .upright{
+        background-color: hsl(217, 19%, 35%);
+        color: #fff;
+        height: 100%;
+        width: 30%;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    
+    .uprightDiv1{
+        display: flex;
+        gap: 15px;
+        font-size: 12px;
+    }
+    .uprightDiv2 p span{
+           color: #c2bbbb;
+    }
+    .uprightDiv2{
+        padding: 10px 0;
+        font-size: 18px;
+    }
+    .uprightDiv3{
+         font-size: 10px;
+    }
+        
+    
+    .down{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        gap: .5em;
+    }
+    .downleft{
+        background-color: #fff;
+        height: 100%;
+        width: 30%;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .downleftDiv1{
+        display: flex;
+        gap: 15px;
+        font-size: 12px;
+    }
+    .downleftDiv2 p span{
+           color: #c2bbbb;
+    }
+    .downleftDiv2{
+        padding: 10px 0;
+        font-size: 18px;
+    }
+    .downleftDiv3{
+         font-size: 10px;
+    }
+    .downright{
+        background-color: hsl(219, 29%, 14%);
+        color: #fff;
+        height: 100%;
+        width: 70%;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    
+    .downrightDiv1{
+        display: flex;
+        gap: 15px;
+        font-size: 12px;
+    }
+    .downrightDiv2 p span{
+           color: #c2bbbb;
+    }
+    .downrightDiv2{
+        padding: 10px 0;
+        font-size: 18px;
+    }
+    .downrightDiv3{
+         font-size: 10px;
+    }
+    
+    
+    aside{
+        background-color:hsl(0, 0%, 100%) ;
+        height:100% ;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    aside .Div1{
+        display: flex;
+        gap: 15px;
+        font-size: 12px;
+    }
+    aside .Div2 p span{
+           color: #c2bbbb;
+    }
+    aside .Div2{
+        padding: 10px 0;
+        font-size: 18px;
+    }
+    aside .Div3{
+         font-size: 10px;
+    }
+    
+}
+
+/* media query for mobile starts here  */
+@media  only screen and (max-width:430px){
+    .page{
+        background-color: rgb(217, 217, 235);
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 3em 0 10em 0;
+    }
+    .card{
+        height: fit-content;
+        width: 80%;
+       display: flex;
+       flex-direction: column;
+       gap: .5em;
+    }
+    .left{
+        height: 100%;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+    }
+    .up{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+    }
+    .upleft{
+        background-color: hsl(263, 55%, 52%);
+        color: #fff; 
+        height: fit-content;
+        width: 100%;
+        border-radius: 5px;
+        padding: 20px;
+        background-position: top right 1.5em ;
+    
+    }
+     .upleftDiv1{
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+     }
+     .upleftDiv1 p span{
+       color: #c2bbbb;
+    }
+    .upleftDiv2{
+    padding: 10px 0;
+    font-size: 18px;
+    }
+    .upleftDiv3{
+     font-size: 12px;
+    }
+    
+    
+    .upright{
+        background-color: hsl(217, 19%, 35%);
+        color: #fff;
+        height: fit-content;
+        width: 100%;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    
+    .uprightDiv1{
+        display: flex;
+        gap: 15px;
+        font-size: 12px;
+    }
+    .uprightDiv2 p span{
+           color: #c2bbbb;
+    }
+    .uprightDiv2{
+        padding: 10px 0;
+        font-size: 18px;
+    }
+    .uprightDiv3{
+         font-size: 12px;
+    }
+        
+    
+    
+    .down{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+       
+    
+    }
+    .downleft{
+        background-color: #fff;
+        height: fit-content;
+        width: 100%;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .downleftDiv1{
+        display: flex;
+        gap: 15px;
+        font-size: 12px;
+    }
+    .downleftDiv2 p span{
+           color: #c2bbbb;
+    }
+    .downleftDiv2{
+        padding: 10px 0;
+        font-size: 18px;
+    }
+    .downleftDiv3{
+         font-size: 12px;
+    }
+        
+
+    .downright{
+        background-color: hsl(219, 29%, 14%);
+        color: #fff;
+        height: fit-content;
+        width: 100%;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    
+    .downrightDiv1{
+        display: flex;
+        gap: 15px;
+        font-size: 12px;
+    }
+    .downrightDiv2 p span{
+           color: #c2bbbb;
+    }
+    .downrightDiv2{
+        padding: 10px 0;
+        font-size: 18px;
+    }
+    .downrightDiv3{
+         font-size: 12px;
+    }
+    
+    aside{
+        background-color:hsl(0, 0%, 100%) ;
+        height:fit-content;
+        width: 100%;
+        display: flex;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    aside .Div1{
+        display: flex;
+        gap: 15px;
+        font-size: 12px;
+    }
+    aside .Div2 p span{
+           color: #c2bbbb;
+    }
+    aside .Div2{
+        padding: 10px 0;
+        font-size: 18px;
+    }
+    aside .Div3{
+         font-size: 12px;
+    }
+}
