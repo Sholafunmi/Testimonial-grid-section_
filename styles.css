@@ -359,7 +359,7 @@ aside .Div3{
 }
 
 /* media query for mobile starts here  */
-@media  only screen and (max-width:430px){
+@media  only screen and (max-width:650px){
     .page{
         background-color: rgb(217, 217, 235);
         height: fit-content;
